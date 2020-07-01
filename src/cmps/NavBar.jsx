@@ -51,7 +51,7 @@ export function NavBar(props) {
 
                 <div>
                     <CloseIcon className="close" onClick={showMenu}></CloseIcon>
-                    <Button variant="contained" color="primary" disabled={homeState} onClick={() => { history.push('/weather-app') }} className={classes.button} startIcon={<HomeIcon />}>Home</Button>
+                    <Button variant="contained" color="primary" disabled={homeState} onClick={() => { history.push('/weather-app/home') }} className={classes.button} startIcon={<HomeIcon />}>Home</Button>
                     <Button variant="contained" color="secondary" disabled={favState} onClick={() => { history.push('/weather-app/favorites') }} className={classes.button} startIcon={<StarIcon />}>Favorites</Button>
                 </div>
             </nav>
