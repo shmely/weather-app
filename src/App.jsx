@@ -15,8 +15,8 @@ export function App() {
       <Router history={history}>
 
         <Switch>
-          <Route path="/" component={WeatherDetails} exact />
-          <Route path="/favorites" component={Favorites} exact />
+          <Route path="/weather-app" component={WeatherDetails} exact />
+          <Route path="/weather-app/favorites" component={Favorites} exact />
         </Switch>
       </Router>
       <UserMessage></UserMessage>

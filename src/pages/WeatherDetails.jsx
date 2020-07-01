@@ -26,7 +26,7 @@ class WeatherDetails extends Component {
 
 
     render() {
-        const isShowWeather = (!this.props.forcast) ? false : true;
+        const isShowWeather = (!this.props.forcast) ? false : true;       
         return (
             <main className="weather-details weather-cont flex column align-center">
                 <AutoComplete onSelectLocation={this.onLocationSelected}></AutoComplete>
