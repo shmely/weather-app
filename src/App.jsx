@@ -15,10 +15,9 @@ export function App() {
       <Router history={history}>
 
         <Switch>
-          <Route path="/weather-app/home" component={WeatherDetails} exact />
-          <Route path="/weather-app/favorites" component={Favorites} exact />
+          <Route path="/home" component={WeatherDetails} exact />
+          <Route path="/favorites" component={Favorites} exact />
         </Switch>
-        <Redirect to='/weather-app/home' />
       </Router>
       <UserMessage></UserMessage>
     </div>
