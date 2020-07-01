@@ -25,10 +25,8 @@ export class UserMessage extends Component {
     render() {
 
         const { msg, type } = this.state;
-        console.log(msg);
         if (!msg) return ''
-        console.log('i am here', msg);
-
+        console.log(msg);
         return (
 
             <div className="user-message">
