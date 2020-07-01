@@ -1,0 +1,38 @@
+.favorits-cont {
+    padding: 50px;
+    min-height: 90vh;
+    h1 {
+        color: #c51162;
+        font-size: rem(30px);
+        margin-bottom: 50px;
+    }
+    .forcast-Day {
+        .details {
+            border: 1px solid grey;
+            padding: 15px;
+            color: #303f9f;
+            border-radius: 5px;
+            margin-right: 50px;
+            min-width: 150px;
+            min-height: 200px;
+            cursor: pointer;
+            img {
+                width: 150px;
+                height: 90px;
+            }
+        }
+        h1 {
+            font-size: rem(50px);
+            margin: 0;
+        }
+        h2 {
+            font-size: rem(20px);
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .favorits-cont {
+        padding: 10px;
+    }
+}

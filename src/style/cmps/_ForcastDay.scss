@@ -1,0 +1,78 @@
+.forcast-Day {
+    min-height: 150px;
+    margin-bottom: 15px;
+    .full-details {
+        color: #fff;
+        border-radius: 5px;
+        background-color: #177d9e;
+        min-width: 500px;
+        padding: 15px;
+        margin-right: 15px;
+        .line-one {
+            width: 100%;
+        }
+        img {
+            width: 150px;
+        }
+    }
+    .details {
+        border: 1px solid lightgray;
+        padding: 15px;
+        color: #303f9f;
+        border-radius: 5px;
+        margin-right: 15px;
+        min-width: 135px;
+        min-height: 150px;
+        img {
+            width: 75px;
+            height: 45px;
+        }
+    }
+    h1 {
+        font-size: rem(50px);
+        margin: 0;
+    }
+    h2 {
+        font-size: rem(20px);
+    }
+}
+
+@media (max-width: 630px) {
+    .forcast-Day {
+        margin-bottom: 15px;
+        .full-details {
+            color: #fff;
+            border-radius: 5px;
+            background-color: #177d9e;
+            min-width: 100px;
+            padding: 15px;
+            .line-one {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            img {
+                width: 150px;
+            }
+        }
+        .details {
+            border: 1px solid lightgray;
+            padding: 15px;
+            color: #303f9f;
+            border-radius: 5px;
+            margin-right: 15px;
+            min-width: 135px;
+            min-height: 150px;
+            img {
+                width: 75px;
+                height: 45px;
+            }
+        }
+        h1 {
+            font-size: rem(50px);
+            margin: 0;
+        }
+        h2 {
+            font-size: rem(20px);
+        }
+    }
+}

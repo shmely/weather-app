@@ -1,0 +1,38 @@
+.weather-view {
+    text-align: center;
+    background-color: #ffffff;
+    min-height: 70%;
+    border-radius: 15px;
+    margin: 75px;
+    padding: 30px;
+    .main-weather {
+        margin-bottom: 50px;
+    }
+    .fav-icon {
+        color: red;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 630px) {
+    .weather-view {
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        background-color: #ffffff;
+        min-height: 70%;
+        border-radius: 15px;
+        margin: 75px;
+        padding: 30px;
+        .forcast-days {
+            justify-content: space-around;
+        }
+        .main-weather {
+            margin-bottom: 50px;
+        }
+        .fav-icon {
+            color: red;
+            margin-right: 20px;
+        }
+    }
+}

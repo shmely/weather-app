@@ -1,0 +1,10 @@
+.weather-details {
+    padding: 50px;
+    min-height: 90vh;
+}
+
+@media (max-width: 630px) {
+    .weather-details {
+        padding: 10px;
+    }
+}
