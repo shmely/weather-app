@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Switch, Route, Redirect } from 'react-router';
+import { Router, Switch, Route } from 'react-router';
 import { history } from './history';
 import { NavBar } from './cmps/NavBar';
 import { UserMessage } from './cmps/UserMessage';
