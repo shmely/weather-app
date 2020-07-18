@@ -51,7 +51,7 @@ class AutoComplete extends Component {
 
         return (
             <div className="autocomplete-cont flex column align-center" >
-                <input type="text" value={txt} onChange={this.onChange} placeholder="search location e.g tel aviv" />
+                <input type="text" value={txt} onChange={this.onChange} placeholder="teams by country e.g spain" />
                 <ul className="autocomplete-results align-start clean-list flex column align-">
                     {showOptions && options.map((option, idx) => <li onClick={() => this.setOption(option)} value={option.key} key={idx}>{option.LocalizedName}</li>)}
                 </ul>

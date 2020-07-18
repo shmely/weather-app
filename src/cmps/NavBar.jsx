@@ -6,6 +6,7 @@ import MenuOutlinedIcon from '@material-ui/icons/MenuOutlined';
 import CloseIcon from '@material-ui/icons/Close';
 import { history } from '../history';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -51,8 +52,8 @@ export function NavBar(props) {
 
                 <div>
                     <CloseIcon className="close" onClick={showMenu}></CloseIcon>
-                    <Button variant="contained" color="primary" disabled={homeState} onClick={() => { history.push('/home') }} className={classes.button} startIcon={<HomeIcon />}>Home</Button>
-                    <Button variant="contained" color="secondary" disabled={favState} onClick={() => { history.push('/favorites') }} className={classes.button} startIcon={<StarIcon />}>Favorites</Button>
+                    <Link to="/"><Button variant="contained" color="primary" disabled={homeState} className={classes.button} startIcon={<HomeIcon />}>Home</Button></Link>
+                    <Link to="/favorites"><Button variant="contained" color="secondary" disabled={favState} className={classes.button} startIcon={<StarIcon />}>Favorites</Button></Link>
                 </div>
             </nav>
             <MenuOutlinedIcon onClick={showMenu} className="btn-menu"></MenuOutlinedIcon>

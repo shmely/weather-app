@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Switch, Route } from 'react-router';
+import { BrowserRouter, Switch, Route, } from 'react-router-dom';
 import { history } from './history';
 import { NavBar } from './cmps/NavBar';
 import { UserMessage } from './cmps/UserMessage';
@@ -11,14 +11,14 @@ import Favorites from './pages/Favorites';
 export function App() {
   return (
     <div className="weather-cont">
-      <NavBar></NavBar>
-      <Router history={history}>
 
+      <BrowserRouter basename="weather-app" history={history}>
+        <NavBar></NavBar>
         <Switch>
-          <Route path="/home" component={WeatherDetails} exact />
+          <Route path="/" component={WeatherDetails} exact />
           <Route path="/favorites" component={Favorites} exact />
         </Switch>
-      </Router>
+      </BrowserRouter>
       <UserMessage></UserMessage>
     </div>
   );
